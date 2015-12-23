@@ -8,9 +8,9 @@ function HandleMobSoundCommand(Split, Player)
 	end
 
 	-- Shortcuts
-	X = Player:GetPosX()
-	Y = Player:GetPosY()
-	Z = Player:GetPosZ()
+	local X = Player:GetPosX()
+	local Y = Player:GetPosY()
+	local Z = Player:GetPosZ()
 
 	-- Handles arguments for bat sounds
 	if Split[2] == "bat" and Split[3] == nil then
@@ -347,7 +347,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	-- Places sound tools for specified mob in player's inventory. The tools have a custom name containing the mob and sound effect name, and a custom
 	-- lore string containing the command for broadcasting the sound effect.
 	if Split[2] == "bat" then
-		Item = cItem(318)
+		local Item = cItem(318)
 
 		Item.m_CustomName = "§rBat Sound: Death"
 		Item.m_Lore = "/mobsound bat death "
@@ -375,7 +375,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "blaze" then
-		Item = cItem(377)
+		local Item = cItem(377)
 
 		Item.m_CustomName = "§rBlaze Sound: Breathe"
 		Item.m_Lore = "/mobsound blaze breathe "
@@ -395,7 +395,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "chicken" then
-		Item = cItem(288)
+		local Item = cItem(288)
 
 		Item.m_CustomName = "§rChicken Sound: Hurt"
 		Item.m_Lore = "/mobsound chicken hurt "
@@ -419,7 +419,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "cow" then
-		Item = cItem(334)
+		local Item = cItem(334)
 
 		Item.m_CustomName = "§rCow Sound: Hurt"
 		Item.m_Lore = "/mobsound cow hurt "
@@ -439,7 +439,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "creeper" then
-		Item = cItem(397, 1, 4)
+		local Item = cItem(397, 1, 4)
 
 		Item.m_CustomName = "§rCreeper Sound: Death"
 		Item.m_Lore = "/mobsound creeper death "
@@ -463,7 +463,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "enderdragon" then
-		Item = cItem(122)
+		local Item = cItem(122)
 
 		Item.m_CustomName = "§rEnder Dragon Sound: End"
 		Item.m_Lore = "/mobsound enderdragon end "
@@ -487,7 +487,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "enderman" then
-		Item = cItem(381)
+		local Item = cItem(381)
 
 		Item.m_CustomName = "§rEnderman Sound: Death"
 		Item.m_Lore = "/mobsound enderman death "
@@ -519,7 +519,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "endermite" then
-		Item = cItem(381)
+		local Item = cItem(381)
 
 		Item.m_CustomName = "§rEndermite Sound: Hit"
 		Item.m_Lore = "/mobsound endermite hit "
@@ -543,7 +543,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "ghast" then
-		Item = cItem(370)
+		local Item = cItem(370)
 
 		Item.m_CustomName = "§rGhast Sound: Affectionate Scream"
 		Item.m_Lore = "/mobsound ghast affectionate_scream "
@@ -575,7 +575,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "guardian" and Split[3] == "elder" then
-		Item = cItem(409)
+		local Item = cItem(409)
 
 		Item.m_CustomName = "§rElder Guardian Sound: Death"
 		Item.m_Lore = "/mobsound guardian elder death "
@@ -595,7 +595,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "guardian" and Split[3] == "land" then
-		Item = cItem(409)
+		local Item = cItem(409)
 
 		Item.m_CustomName = "§rLand Guardian Sound: Death"
 		Item.m_Lore = "/mobsound guardian land death "
@@ -615,7 +615,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "guardian" and Split[3] == "underwater" then
-		Item = cItem(409)
+		local Item = cItem(409)
 
 		Item.m_CustomName = "§rUnderwater Guardian Sound: Attack"
 		Item.m_Lore = "/mobsound guardian underwater attack "
@@ -652,7 +652,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "horse" and Split[3] == "donkey" then
-		Item = cItem(417)
+		local Item = cItem(417)
 
 		Item.m_CustomName = "§rDonkey Sound: Angry"
 		Item.m_Lore = "/mobsound horse donkey angry "
@@ -676,7 +676,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "horse" and Split[3] == "normal" then
-		Item = cItem(417)
+		local Item = cItem(417)
 
 		Item.m_CustomName = "§rHorse Sound: Death"
 		Item.m_Lore = "/mobsound horse normal death "
@@ -720,7 +720,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "horse" and Split[3] == "skeleton" then
-		Item = cItem(417)
+		local Item = cItem(417)
 
 		Item.m_CustomName = "§rSkeleton Horse Sound: Death"
 		Item.m_Lore = "/mobsound horse skeleton death "
@@ -740,7 +740,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "horse" and Split[3] == "zombie" then
-		Item = cItem(417)
+		local Item = cItem(417)
 
 		Item.m_CustomName = "§rZombie Horse Sound: Death"
 		Item.m_Lore = "/mobsound horse zombie death "
@@ -765,7 +765,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "irongolem" then
-		Item = cItem(265)
+		local Item = cItem(265)
 
 		Item.m_CustomName = "§rIron Golem Sound: Death"
 		Item.m_Lore = "/mobsound irongolem death "
@@ -789,7 +789,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "magmacube" then
-		Item = cItem(378)
+		local Item = cItem(378)
 
 		Item.m_CustomName = "§rMagma Cube Sound: Big"
 		Item.m_Lore = "/mobsound magmacube big "
@@ -809,7 +809,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "ocelot" then
-		Item = cItem(349)
+		local Item = cItem(349)
 
 		Item.m_CustomName = "§rOcelot Sound: Hiss"
 		Item.m_Lore = "/mobsound ocelot hiss "
@@ -837,7 +837,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "pig" then
-		Item = cItem(319)
+		local Item = cItem(319)
 
 		Item.m_CustomName = "§rPig Sound: Death"
 		Item.m_Lore = "/mobsound pig death "
@@ -857,7 +857,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "player" then
-		Item = cItem(397, 1, 3)
+		local Item = cItem(397, 1, 3)
 
 		Item.m_CustomName = "§rPlayer Sound: Burp"
 		Item.m_Lore = "/mobsound player burp "
@@ -893,7 +893,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "rabbit" then
-		Item = cItem(415)
+		local Item = cItem(415)
 
 		Item.m_CustomName = "§rRabbit Sound: Death"
 		Item.m_Lore = "/mobsound rabbit death "
@@ -917,7 +917,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "sheep" then
-		Item = cItem(35)
+		local Item = cItem(35)
 
 		Item.m_CustomName = "§rSheep Sound: Say"
 		Item.m_Lore = "/mobsound sheep say "
@@ -937,7 +937,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "silverfish" then
-		Item = cItem(351, 1, 8)
+		local Item = cItem(351, 1, 8)
 
 		Item.m_CustomName = "§rSilverfish Sound: Hit"
 		Item.m_Lore = "/mobsound silverfish hit "
@@ -961,7 +961,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "skeleton" then
-		Item = cItem(397)
+		local Item = cItem(397)
 
 		Item.m_CustomName = "§rSkeleton Sound: Bow"
 		Item.m_Lore = "/mobsound skeleton bow "
@@ -989,7 +989,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "slime" then
-		Item = cItem(341)
+		local Item = cItem(341)
 
 		Item.m_CustomName = "§rSlime Sound: Attack"
 		Item.m_Lore = "/mobsound slime attack "
@@ -1009,7 +1009,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "spider" then
-		Item = cItem(375)
+		local Item = cItem(375)
 
 		Item.m_CustomName = "§rSpider Sound: Death"
 		Item.m_Lore = "/mobsound spider death "
@@ -1029,7 +1029,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "villager" then
-		Item = cItem(388)
+		local Item = cItem(388)
 
 		Item.m_CustomName = "§rVillager Sound: Death"
 		Item.m_Lore = "/mobsound villager death "
@@ -1061,7 +1061,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "rabbit" then
-		Item = cItem(415)
+		local Item = cItem(415)
 
 		Item.m_CustomName = "§rRabbit Sound: Death"
 		Item.m_Lore = "/mobsound rabbit death "
@@ -1085,7 +1085,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "wither" then
-		Item = cItem(397, 1, 1)
+		local Item = cItem(397, 1, 1)
 
 		Item.m_CustomName = "§rWither Sound: Death"
 		Item.m_Lore = "/mobsound wither death "
@@ -1113,7 +1113,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "wolf" then
-		Item = cItem(352)
+		local Item = cItem(352)
 
 		Item.m_CustomName = "§rWolf Sound: Bark"
 		Item.m_Lore = "/mobsound wolf bark "
@@ -1157,7 +1157,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "zombie" then
-		Item = cItem(397, 1, 2)
+		local Item = cItem(397, 1, 2)
 
 		Item.m_CustomName = "§rZombie Sound: Death"
 		Item.m_Lore = "/mobsound zombie death "
@@ -1205,7 +1205,7 @@ function HandleMobSoundToolCommand(Split, Player)
 	end
 
 	if Split[2] == "zombiepigman" then
-		Item = cItem(371)
+		local Item = cItem(371)
 
 		Item.m_CustomName = "§rZombie Pigman Sound: Angry"
 		Item.m_Lore = "/mobsound zombiepigman angry "
