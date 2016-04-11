@@ -1,7 +1,7 @@
 g_PluginInfo = {
 	Name = "MobSound",
-	Version = "1.1",
-	Date = "2015-12-21",
+	Version = "1.2",
+	Date = "2016-04-11",
 	SourceLocation = "https://github.com/mathias-github/MobSound",
 	Description = [[Allows you to broadcast a mob sound at your current location by executing a command. Alternatively, you can right-click while holding a tool in your hand to broadcast a mob sound. Perfect together with tonibm19's DisguiseCraft plugin.]],
 
